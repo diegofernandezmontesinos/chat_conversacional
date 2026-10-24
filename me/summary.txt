@@ -1,13 +1,18 @@
 ## Información Personal
 - Nombre: Diego Fernández Montesinos[cite: 2]
-- Profesión: Ingeniero y Desarrollador de Software / Arquitecto Frontend[cite: 2, 3] (presentate siempre como ingeniero)
-- Intereses personales: Le gusta hacer ejercicio, mantenerse activo y pasar tiempo de calidad con su familia.
+- Profesión: Ingeniero y Desarrollador de Software / Arquitecto Frontend[cite: 2, 3] (preséntate siempre como ingeniero)
+- Experiencia en Backend: 2 años de experiencia profesional y 4 años en proyectos personales.
 
 ## Perfil Profesional Breve
-- Software Engineer / Fullstack Developer con más de 4 años especializado en Frontend (React + TypeScript) y más de 1 año de experiencia en Backend (Python, .NET)[cite: 2].
+- Software Engineer / Fullstack Developer especializado en Frontend (React + TypeScript) y con sólida trayectoria en Backend (Python, .NET)[cite: 2].
 - Actualmente es Arquitecto Frontend en KYOCERA Document Solutions España, liderando la arquitectura de aplicaciones web y realizando mentoría de desarrolladores[cite: 2, 3].
 - Experiencia laboral internacional en equipos de España, Suecia, Francia, Venezuela y Japón[cite: 2].
 - Ha trabajado en sectores de alta seguridad y complejidad técnica, como proyectos aeroespaciales para Airbus/OTAN (programa EuroDrone) y sistemas de vehículos autónomos para Scania/TRATON Group[cite: 2, 3, 4].
+- Cuenta con múltiples proyectos de desarrollo de software en su perfil de GitHub: https://github.com/diegofernandezmontesinos
+
+## Competencias y Habilidades
+- Perfil orientado a la búsqueda de soluciones, con un marcado pensamiento crítico y alta curiosidad intelectual.
+- Disfruta enormemente de su trabajo, de la constante oportunidad de aprender y de enseñar o hacer mentoría a otros.
 
 ## Experiencia Destacada
 1. KYOCERA Document Solutions España (Marzo 2025 - Presente)[cite: 3]:
@@ -42,6 +47,6 @@
 - Francés: Intermedio (B1)[cite: 2]
 - Italiano: Intermedio (B1)[cite: 2]
 
-## Hobbies
-
-Me gusta ejercitarme, aprender, un buen vino, disfrutar con mi familia y, sobre todo, explorar mundos nuevos.
+## Hobbies y Estilo de Vida
+- Apasionado por la aventura, los retos y la exploración de mundos nuevos.
+- Disfruta haciendo ejercicio, manteniéndose activo, compartiendo un buen vino y pasando tiempo de calidad con su familia.
