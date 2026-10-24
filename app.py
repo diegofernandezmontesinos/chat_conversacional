@@ -121,14 +121,17 @@ class Me:
             Tu responsabilidad es representar a {self.name} en las interacciones del sitio web con la mayor fidelidad posible.
             Se te proporciona un resumen de la trayectoria profesional y el perfil de LinkedIn de {self.name} que puedes usar para responder preguntas.
             Muestra un tono profesional y atractivo, como si hablaras con un cliente potencial o un futuro empleador que haya visitado el sitio web.
+            Debes ser cortes, honesto y respetuoso en tus respuestas, lo que no sepas, dices que no lo sabes.
 
             REGLAS ESTRICTAS E INELUDIBLES PARA EL USO DE HERRAMIENTAS:
             1. REGISTRO DE USUARIO ('record_user_details'): 
                - SI el usuario menciona, escribe o proporciona su correo electrónico (email) o datos de contacto, TIENES LA OBLIGACIÓN ABSOLUTA de invocar de inmediato la herramienta 'record_user_details'. No te limites a responderle con texto amable; ejecuta la función.
             
             2. PREGUNTAS DESCONOCIDAS ('record_unknown_question'): 
-               - SI el usuario pregunta por algo personal, profesional o cualquier detalle que **no esté presente** en tu perfil o documentos de contexto, TIENES LA OBLIGACIÓN de invocar la herramienta 'record_unknown_question' pasando la pregunta exacta. Nunca inventes datos."""
-
+               - SI el usuario pregunta por algo personal, profesional o cualquier detalle que **no esté presente** en tu perfil o documentos de contexto, TIENES LA OBLIGACIÓN de invocar la herramienta 'record_unknown_question' pasando la pregunta exacta. Nunca inventes datos.
+            3. PRESENTACION:  
+                - Presentate siempre como {self.name} y diciendo que soy INGENIERO"""
+            
         system_prompt += (
             f"\n\n## Resumen:\n{self.summary}\n\n## Perfil de LinkedIn:\n{self.linkedin}\n\n"
         )
@@ -136,30 +139,33 @@ class Me:
         return system_prompt
 
     def chat(self, message, history):
-        messages = (
-            [{"role": "system", "content": self.system_prompt()}]
-            + history
-            + [{"role": "user", "content": message}]
-        )
+        # Construir el historial de mensajes de forma limpia compatible con OpenAI/Groq
+        messages = [{"role": "system", "content": self.system_prompt()}]
+        
+        for human, assistant in history:
+            messages.append({"role": "user", "content": human})
+            messages.append({"role": "assistant", "content": assistant})
+            
+        messages.append({"role": "user", "content": message})
+
         done = False
+        current_messages = messages.copy()
+        
         while not done:
             response = self.gemini.chat.completions.create(
                 model="openai/gpt-oss-120b",
-                # model="gemini-3.8-flash",
-                messages=messages,
+                messages=current_messages,
                 tools=tools,
             )
+            msg = response.choices[0].message
             if response.choices[0].finish_reason == "tool_calls":
-                msg = response.choices[0].message
                 tool_calls = msg.tool_calls
                 results = self.handle_tool_call(tool_calls)
-                messages.append(msg)
-                messages.extend(results)
+                current_messages.append(msg)
+                current_messages.extend(results)
             else:
                 done = True
-        return response.choices[0].message.content
-
-
+                return msg.content
 if __name__ == "__main__":
     me = Me()
     port = int(os.getenv("PORT", 7860))
