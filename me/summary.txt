@@ -1,1 +1,47 @@
-Me llamo Diego Fernández Montesinos. Soy ingeniero y desarrollador de software. Me gusta hacer ejercicio, pasar tiempo de calidad con mi famila 
+## Información Personal
+- Nombre: Diego Fernández Montesinos[cite: 2]
+- Profesión: Ingeniero y Desarrollador de Software / Arquitecto Frontend[cite: 2, 3]
+- Intereses personales: Le gusta hacer ejercicio, mantenerse activo y pasar tiempo de calidad con su familia.
+
+## Perfil Profesional Breve
+- Software Engineer / Fullstack Developer con más de 4 años especializado en Frontend (React + TypeScript) y más de 1 año de experiencia en Backend (Python, .NET)[cite: 2].
+- Actualmente es Arquitecto Frontend en KYOCERA Document Solutions España, liderando la arquitectura de aplicaciones web y realizando mentoría de desarrolladores[cite: 2, 3].
+- Experiencia laboral internacional en equipos de España, Suecia, Francia, Venezuela y Japón[cite: 2].
+- Ha trabajado en sectores de alta seguridad y complejidad técnica, como proyectos aeroespaciales para Airbus/OTAN (programa EuroDrone) y sistemas de vehículos autónomos para Scania/TRATON Group[cite: 2, 3, 4].
+
+## Experiencia Destacada
+1. KYOCERA Document Solutions España (Marzo 2025 - Presente)[cite: 3]:
+   - Arquitectura Frontend con FOM-DSS y Atomic Design[cite: 3].
+   - Trabajo con TDD (Vitest, React Testing Library), auditorías de rendimiento con Lighthouse y documentación con modelo C4[cite: 3].
+   - Colaboración con equipo de backend en .NET C# microservicios[cite: 3].
+
+2. ALTEN Delivery Centre Spain / Scania Sweden (Agosto 2023 - Marzo 2025)[cite: 3]:
+   - Liderazgo técnico en desarrollo de software para vehículos autónomos (aplicaciones BringUp y Hawk para calibración de LiDAR, radares y telemetría)[cite: 3].
+   - Escaló el equipo de 1 a 12 ingenieros y asumió el rol de Scrum Master[cite: 3, 4].
+   - Stack: React, TypeScript, Python Backend, GitLab CI/CD[cite: 3, 4].
+
+3. KEAPPS / Airbus Defence and Space (Febrero 2023 - Agosto 2023)[cite: 4]:
+   - Desarrollo de aplicaciones seguras para gestión de documentación técnica de aviones militares (programa Honey EuroDrone)[cite: 4].
+   - Stack: AngularJS, Java 8, Oracle SQL[cite: 4].
+
+4. Technological Sharks / Freelance (Enero 2021 - Febrero 2023)[cite: 4]:
+   - Desarrollo fullstack de billetera digital/plataforma de pagos y aplicaciones web a medida[cite: 4].
+
+5. Experiencia Previa en Ingeniería y Gestión[cite: 5]:
+   - CENTURY 21 (2017 - 2023): Business Development Manager, liderando equipos de hasta 25 personas[cite: 5].
+   - Torre Oleus (2011 - 2016): Ingeniero Civil de obras en Venezuela[cite: 5].
+
+## Formación Académica
+- Graduado en Ingeniería Civil por la Universidad 'Santa María' (2009 - 2016)[cite: 5].
+- Full Stack Web Developer en Codehouse Academy (2021 - 2022)[cite: 5].
+- Desarrollador React en OpenBootcamp (2024)[cite: 5].
+
+## Idiomas
+- Español: Nativo[cite: 2]
+- Inglés: Avanzado / Profesional (C1)[cite: 2]
+- Francés: Intermedio (B1)[cite: 2]
+- Italiano: Intermedio (B1)[cite: 2]
+
+## Hobbies
+
+Me gusta ejercitarme, aprender, un buen vino, disfrutar con mi familia y, sobre todo, explorar mundos nuevos.
